@@ -13,6 +13,6 @@ app.set('view engine', 'html');
 app.use(express.static(__dirname + '/views/'));
 app.use('/api', require('./routes/api'));
 app.listen(port);
-console.log(`Listening On http://localhost:${port}/api`);
+console.log(`Listening On http://localhost:${port}`);
 
 module.exports = app;

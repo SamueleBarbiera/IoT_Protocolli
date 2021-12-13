@@ -5,7 +5,7 @@ const User = require("../models/user_schema");
 const createData = (req, res) => {
     User.create(req.body)
         .then((data) => {
-            console.log("New User Created!", data);
+            console.log("Data received from drone [TODO]", data);
             res.status(201).json(data);
         })
         .catch((err) => {
@@ -31,9 +31,10 @@ const readData = (req, res) => {
 };
 
 const readDataByID = (req, res) => {
-    User.find()
+    User.findById()
         .then((data) => {
             res.status(200).json(data);
+            console.log("Current values for drone " + req.params["id"] + ": [TODO]")
         })
         .catch((err) => {
             console.error(err);
