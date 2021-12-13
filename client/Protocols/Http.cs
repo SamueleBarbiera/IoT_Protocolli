@@ -31,5 +31,17 @@ namespace Client.Protocols
 
             httpResponse.Close();
         }
+
+        public void Get()
+        {
+            httpWebRequest = (HttpWebRequest)WebRequest.Create(endpoint);
+            httpWebRequest.Method = "GET";
+
+            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+
+            Console.Out.WriteLine(httpResponse.StatusCode);
+
+            httpResponse.Close();
+        }
     }
 }
