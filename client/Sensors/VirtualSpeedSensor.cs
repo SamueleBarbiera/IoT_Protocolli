@@ -10,7 +10,7 @@ namespace Client.Sensors
     {
         public string toJson()
         {
-            return "{\"speed\": " + GetSpeed() + "}";
+            return "{\"speed\": " + Convert.ToString(GetSpeed()) + "}";
         }
 
         public int GetSpeed()
