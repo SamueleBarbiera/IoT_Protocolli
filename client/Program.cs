@@ -15,7 +15,7 @@ namespace Client
             sensors.Add(new VirtualSpeedSensor());
 
             // define protocol
-            ProtocolInterface protocol = new Http("http://localhost:8011/drones/123");
+            ProtocolInterface protocol = new Http("http://localhost:9000/drones/123");  //SAMUELE IP 192.169.200.1
 
             // send data to server
             while (true)
