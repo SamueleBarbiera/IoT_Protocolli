@@ -2,12 +2,12 @@ const coap = require("coap");
 const server = coap.createServer();
 
 server.on("request", function (req, res) {
-    res.end("Hello " + req.url.split("/")[1] + "\n");
+    res.end("Prova " + req.url.split("/")[1] + "\n");
 });
 
-// the default CoAP port is 5683
+// CoAP port = 5683
 server.listen(function () {
-    var req = coap.request("coap://localhost/Matteo");
+    var req = coap.request("coap://localhost/Drone");
     req.on("response", function (res) {
         res.pipe(process.stdout);
         res.on("end", function () {
