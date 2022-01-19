@@ -5,12 +5,14 @@
   "main": "server.js",
   "scripts": {
     "dev": "node server.js",
-    "mqtt": "node mqtt.js",
+    "coap": "nodemon coap.js",
+    "c": "nodemon c.js",
     "serve": "nodemon server.js",
     "format": "prettier server.js **/*.js --write"
   },
   "license": "ISC",
   "dependencies": {
+    "coap": "^1.0.2",
     "cors": "^2.8.4",
     "dotenv": "^8.2.0",
     "express": "^4.16.3",
