@@ -1,0 +1,28 @@
+{
+    "folders": [
+		{
+			"path": "..\\..\\React"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\Backend"
+		}
+	],
+    "settings": {
+        "sqltools.connections": [
+            {
+                "previewLimit": 50,
+                "server": "localhost",
+                "port": 5432,
+                "driver": "PostgreSQL",
+                "name": "todos",
+                "database": "todo",
+                "username": "postgres",
+                "password": "samuele2512"
+            }
+        ],
+        "DockerRun.DisableDockerrc": true
+    }
+}

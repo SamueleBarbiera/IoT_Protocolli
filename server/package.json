@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node server.js",
     "coap": "nodemon coap.js",
-    "c": "nodemon c.js",
+    "amqp": "nodemon amqp.js",
     "serve": "nodemon server.js",
     "format": "prettier server.js **/*.js --write"
   },
