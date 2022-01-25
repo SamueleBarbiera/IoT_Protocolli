@@ -19,7 +19,6 @@ namespace Client.Protocols
             httpWebRequest = (HttpWebRequest)WebRequest.Create(endpoint);
             httpWebRequest.ContentType = "text/json";
             httpWebRequest.Method = "POST";
-
             using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
             {
                 streamWriter.Write(data);
